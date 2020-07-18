@@ -1,0 +1,46 @@
+/*
+Theme Name: Mark Of The Beastro
+Theme URI: https://wwww.aeronroemer.com/
+Author: Aeron Roemer
+Author URI: https://wwww.aeronroemer.com/
+Description: Custom theme for Mark Of The Beastro including header based on sign
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: beastro
+*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+    background-color: #000000;
+    color: white;
+}
+header{
+    display: block;
+    margin: 0 auto;
+    background-color: burlywood;
+    height: 20rem;
+    width: 60rem;
+    text-align: center;
+}
+.content-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+section{
+    margin: 20px;
+    width: 40%;
+    height: 500px;
+    border: 1px solid white;
+}
+.section-carousel{
+    width: 100%;
+}
