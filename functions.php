@@ -21,4 +21,17 @@ add_action( 'wp_enqueue_scripts', 'wphierarchy_enqueue_styles'); //adds custom f
 register_nav_menus( [ 
     'main-menu' => esc_html__( 'Main Menu', 'beastro' ),
  ] );
+// Setup Widget Areas
+function beastro_widgets_init() {
+    register_sidebar( [
+        'name'          => esc_html__('Main Sidebar', 'beastro'),
+        'id'            => 'main-sidebar',
+        'description'   => esc_html__('Add widgets for main sidebar here', 'beastro'),
+        'before_widget' => '<section class="widget>',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title>',
+        'after_title'   => '</h2>'
+        ] );
+}
+add_action( 'widgets_init', 'beastro_widgets_init')
 ?>
