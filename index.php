@@ -14,7 +14,7 @@
                 MENU
             </section>
             <section class="section-info">
-                INFO
+                INFO.
             </section>
             <section class="beehive-link">
                 BEEHIVE
