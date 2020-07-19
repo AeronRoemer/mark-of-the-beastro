@@ -8,7 +8,7 @@
                 CAROUSEL
             </section>
             <section class="section-order">
-                ORDER
+                ORDER/DELIVERY
             </section>
             <section class="section-menu">
                 MENU
