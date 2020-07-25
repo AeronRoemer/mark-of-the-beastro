@@ -11,7 +11,12 @@ Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: beastro
+font-family: 'Concert One', cursive;
 */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fugaz+One&display=swap');
+
+
+    
 
 html{
     box-sizing: border-box;
@@ -30,17 +35,21 @@ header{
     width: 60rem;
     text-align: center;
 }
+.skip-link{
+    display: none;
+}
 .content-container{
     display: flex;
+    justify-content: space-around;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 5rem;
 }
 .post{
     position: relative;
     margin: 20px;
     width: 40%;
-    height: 500px;
+    height: 40rem;
     border: 1px solid white;
     border-radius: 5px;
 }
@@ -48,6 +57,20 @@ header{
     height: 40rem;
     width: 100%;
     object-fit: cover;
+}
+.entry-title{
+    position: absolute;
+    right: 2rem;
+    bottom: 4rem;
+    text-transform: uppercase;
+    background-color: #000000;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Fugaz One', cursive;
+}
+.entry-title .post-title{
+    margin: 7px 10px;
 }
 .section-carousel{
     width: 100%;

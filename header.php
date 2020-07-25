@@ -11,7 +11,7 @@
     <div id="page">
         <header id="masthead" class="header-container" role="banner">
             <a href="#content" class="skip-link screen-reader-text" display="none">
-                <?php esc_html_e( 'Skip to content', 'beastro' ); ?> Skip to contet
+                <?php esc_html_e( 'Skip to content', 'beastro' ); ?> 
             </a>
             <div class="header">
             <div class="site-branding">
@@ -23,7 +23,6 @@
                     <?php bloginfo( 'description' ); ?>
                 </p>
             </div>
-                <div class="header-svg">MARK OF THE BEASTRO</div>
                 <span>Address & Hours </span>
                 <span> Phone Number </span>
             </div>   
