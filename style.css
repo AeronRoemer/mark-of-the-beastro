@@ -36,11 +36,18 @@ header{
     flex-wrap: wrap;
     padding: 50px;
 }
-.section-post{
+.post{
+    position: relative;
     margin: 20px;
     width: 40%;
     height: 500px;
     border: 1px solid white;
+    border-radius: 5px;
+}
+.post-image{
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
 }
 .section-carousel{
     width: 100%;

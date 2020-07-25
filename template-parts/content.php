@@ -1,9 +1,9 @@
-<article id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>">
     <header class="entry-header">
-    <span class="dashicons dashicons-format-<?php echo get_post_format( $post->ID ); ?>"></span>
     <?php the_title( '<h1>', '</h1>' ); ?>
         <div class="byline">
         <?php esc_html_e('Author: '); the_author();?>
+        conntent.php
         </div>
     </header>
     <div class="entry-content">
