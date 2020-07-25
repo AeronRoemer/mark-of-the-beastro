@@ -10,8 +10,8 @@
     <body <?php body_class(); ?>>
     <div id="page">
         <header id="masthead" class="header-container" role="banner">
-            <a href="#content" class="skip-link screen-reader-text">
-                <?php esc_html_e( 'Skip to content', 'beastro' ); ?>
+            <a href="#content" class="skip-link screen-reader-text" display="none">
+                <?php esc_html_e( 'Skip to content', 'beastro' ); ?> Skip to contet
             </a>
             <div class="header">
             <div class="site-branding">
