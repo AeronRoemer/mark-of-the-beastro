@@ -13,6 +13,15 @@
             <?php endwhile; else :?>
                 <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
             <?php endif; ?>
+            <section id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
+            <div class="section-post">
+                <a href="beehive">
+                <img src="beehive src" class="post-image" />
+                </a>
+                content-page
+                <div class="entry-title">
+                    The Beehive
+            </div>
         </section>
     </div>
 </div>

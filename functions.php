@@ -1,14 +1,13 @@
 <?php
+// Customizer additions.
+require get_template_directory() . '/inc/customizer.php';
+
 //Add Theme Support
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video'] );
 add_theme_support( 'html5' ); 
 add_theme_support( 'automatic-feed-links' );
-add_theme_support( 'custom-background' );
-add_theme_support( 'custom-header' );
-add_theme_support( 'custom-logo' );
-add_theme_support( 'customize-selective-refresh-widgets' );
 add_theme_support( 'starter-content' );
 
 //Load in CSS
@@ -42,5 +41,6 @@ function beastro_widgets_init() {
             'after_title'   => '</h2>'
             ] );
 }
-add_action( 'widgets_init', 'beastro_widgets_init')
+add_action( 'widgets_init', 'beastro_widgets_init');
+
 ?>

@@ -14,17 +14,24 @@
                 <?php esc_html_e( 'Skip to content', 'beastro' ); ?> 
             </a>
             <div class="header">
-            <div class="site-branding">
-                <p class="site-title">
-                    <a href="<?php esc_url( home_url('/')) ;?>" rel="home"></a>
-                    <?php bloginfo( 'name' ); ?>
-                </p>
-                <p class="site-description">
-                    <?php bloginfo( 'description' ); ?>
-                </p>
+                <div class="site-branding">
+                    <p class="site-title">
+                        <a href="<?php esc_url( home_url('/')) ;?>" rel="home"></a>
+                        <?php bloginfo( 'name' ); ?>
+                    </p>
+                    <p class="site-description">
+                        <?php bloginfo( 'description' ); ?>
+                    </p>
+                </div>
+                <div class="header-hours">
+                    <?php echo get_theme_mod('hours'); ?>
+                </div>
+                <div class="header-phone">
+                    <?php echo get_theme_mod('phone'); ?>
+                </div>
+                <div class="header-location">
+                <?php echo get_theme_mod('location'); ?>
             </div>
-                <span>Address & Hours </span>
-                <span> Phone Number </span>
             </div>   
             <nav id="site-navigation" class="main-navigation" role="navigation">
             <?php
