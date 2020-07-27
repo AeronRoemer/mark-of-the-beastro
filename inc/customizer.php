@@ -74,6 +74,49 @@ $wp_customize->add_section(
 			'type' => 'text'
 		)
 	);
+//Alert Panel
+$wp_customize->add_section(
+    'alert', 
+    array(
+    'title' => 'Add Alert',
+	'description' => 'Add an alert that displays above content until deleted.
+	Delete all text to remove from display.',
+    'capability' => 'edit_theme_options',
+    'priority' => 35
+    ));
+	
+	$wp_customize->add_setting(
+		'alert-header',
+		array(
+			'default' => '',
+			'transport' => 'refresh'
+		)
+	);
+
+	$wp_customize->add_control(
+		'alert-header',
+		array(
+			'section' => 'alert',
+			'label' => 'Headline',
+			'type' => 'text'
+		)
+	);
+	$wp_customize->add_setting(
+		'alert-info',
+		array(
+			'default' => '',
+			'transport' => 'refresh'
+		)
+	);
+
+	$wp_customize->add_control(
+		'alert-info',
+		array(
+			'section' => 'alert',
+			'label' => 'Information',
+			'type' => 'textarea'
+		)
+    );
 // add a setting for the site logo
 $wp_customize->add_setting('your_theme_logo');
 // Add a control to upload the logo

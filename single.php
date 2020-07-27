@@ -11,5 +11,6 @@ Single-post.php can be used if different post types pull different pages. -->
             <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
         <?php endif; ?>
     </div>
+    Single
 </div>
 <?php get_footer(); ?>

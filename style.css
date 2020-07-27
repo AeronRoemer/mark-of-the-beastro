@@ -13,8 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: beastro
 font-family: 'Concert One', cursive;
 */
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fugaz+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Fugaz+One&display=swap');
 
     
 
@@ -27,6 +26,10 @@ body{
     background-color: #000000;
     color: white;
 }
+.site-title{
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 4.5rem;
+}
 header{
     display: block;
     margin: 0 auto;
@@ -37,6 +40,17 @@ header{
 }
 .skip-link{
     display: none;
+}
+.alert{
+    font-family: 'Ropa Sans', sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border: 1px  #fca5a5 solid;
+    box-shadow: 0 0 10px 2px #eb3b3b inset, 0 0 10px 3px #f94646;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
 }
 .content-container{
     display: flex;
@@ -75,3 +89,4 @@ header{
 .section-carousel{
     width: 100%;
 }
+

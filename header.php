@@ -30,16 +30,9 @@
                     <?php echo get_theme_mod('phone'); ?>
                 </div>
                 <div class="header-location">
-                <?php echo get_theme_mod('location'); ?>
-            </div>
-            </div>   
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-            <?php
-                wp_nav_menu( [
-                    'theme_location' => 'main-menu'
-                ] )
-            ?>
-            </nav>   
+                    <?php echo get_theme_mod('location'); ?>
+                </div>
+            </div>    
         </header>
         <div id="content" class="site-content">
         
