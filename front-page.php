@@ -24,7 +24,7 @@
             </article>
             <?php endwhile; else :?>
                 <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
-            <?php endif; ?> ?>
+            <?php endif; ?>
             <!--Permanant Sections: About & Beehive Link Image -->
             <section class="post section-info">
                 <div>

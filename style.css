@@ -65,7 +65,7 @@ header{
 }
 .post{
     position: relative;
-    margin: 20px;
+    margin: 20px auto;
     width: 40%;
     height: 40rem;
     border: 1px solid white;
