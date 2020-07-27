@@ -59,6 +59,10 @@ header{
     flex-wrap: wrap;
     padding: 5rem;
 }
+.section-carousel .post{
+    width: 90%;
+    justify-content: space-around;
+}
 .post{
     position: relative;
     margin: 20px;
@@ -86,7 +90,3 @@ header{
 .entry-title .post-title{
     margin: 7px 10px;
 }
-.section-carousel{
-    width: 100%;
-}
-
