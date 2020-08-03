@@ -2,6 +2,7 @@
 <?php get_header(); ?>
 <div id="primary" class="content-area extended">
 <main id="main" class="site-main" role="main">
+<?php get_template_part( 'template-parts/background'); ?>
         <section class="section-carousel">
         <?php 
             $query = new WP_Query( array( 'category_name' => 'gallery'));

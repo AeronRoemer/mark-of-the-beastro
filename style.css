@@ -15,7 +15,6 @@ font-family: 'Concert One', cursive;
 */
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Fugaz+One&display=swap');
 
-    
 
 html{
     box-sizing: border-box;
@@ -23,23 +22,41 @@ html{
 }
 body{
     font-size: 1.5rem;
-    background-color: #000000;
+    background-color: darkgray;
     color: white;
+    margin: 0;
 }
-.site-title{
-    font-family: 'Ropa Sans', sans-serif;
-    font-size: 4.5rem;
-}
+
 header{
     display: block;
-    margin: 0 auto;
-    background-color: burlywood;
-    height: 20rem;
-    width: 60rem;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 12rem;
+    width: 100%;
     text-align: center;
+    z-index: 15;
 }
 .skip-link{
     display: none;
+}
+.custom-info{
+    display: none;
+    margin: 1rem;
+}
+.header-links{
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+}
+.header-link{
+    margin: 1rem;
+}
+.social-icons{
+    display: inline-block;
+}
+.social-icon{
+    margin: 1rem;
 }
 .alert{
     font-family: 'Ropa Sans', sans-serif;

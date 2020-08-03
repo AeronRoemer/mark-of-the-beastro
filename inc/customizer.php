@@ -118,32 +118,13 @@ $wp_customize->add_section(
 		)
 	);
 //Add main Image Setting
-//Alert Panel
-$wp_customize->add_section(
-    'background-photo', 
-    array(
-    'title' => 'Background Photo',
-	'description' => 'Add or change the backgound image.',
-    'capability' => 'edit_theme_options',
-    'priority' => 32
-    ));
-	
-$wp_customize->add_setting('bg_img');
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'bg_img',
+$wp_customize->add_setting('bg-img');
+// Add a control to upload the image
+$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'bg-img',
 array(
-'label' => 'Upload Image',
-'section' => 'background-photo',
-'settings' => 'bg_img',
-) ) );
-
-// add a setting for the site logo
-$wp_customize->add_setting('your_theme_logo');
-// Add a control to upload the logo
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'your_theme_logo',
-array(
-'label' => 'Upload Logo',
+'label' => 'Upload Background Image',
 'section' => 'title_tagline',
-'settings' => 'your_theme_logo',
+'settings' => 'bg-img',
 ) ) );
 }
 add_action('customize_register', 'your_theme_new_customizer_settings');
