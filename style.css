@@ -13,8 +13,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: beastro
 font-family: 'Concert One', cursive;
 
+- neon alert
+- menu & plugin
+- about text and links
+-  order link and text
 //include font in own files later
 */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Fugaz+One&display=swap');
 
 html, body, div, span, applet, object, iframe,
@@ -43,7 +48,7 @@ html{
 }
 body{
     font-size: 1.5rem;
-    background-color: darkgray;
+    background-color: rgb(0, 0, 0);
     color: white;
     margin: 0;
 }
@@ -133,7 +138,8 @@ body{
     text-align: center;
 }
 .neon-text{
-    
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
 }
 .content-container{
     display: flex;

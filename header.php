@@ -45,7 +45,9 @@
                         </div>
                         <div class="social-icons">
                             <img src="<?php echo get_template_directory_uri(); ?>/inc/img/insta-icon.png" class="social-icon"/>
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fb-icon.png" class="social-icon"/>
+                            <a href="https://www.facebook.com/Markofthebeastro/" target="blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fb-icon.png" class="social-icon"/>
+                            </a>
                         </div>
                     </div>
             </div> 
