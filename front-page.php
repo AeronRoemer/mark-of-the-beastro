@@ -26,7 +26,7 @@
                 <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
             <?php endif; ?>
             <!--Permanant Sections: About & Beehive Link Image -->
-            <section class="post section-info">
+            <section class="post section-info neon-text">
                 <div>
                     Information 
                     <div class="header-hours">
@@ -43,7 +43,6 @@
                     </div>
                 </div>
                 https://www.yelp.com/biz/mark-of-the-beastro-salt-lake-city-2?osq=mark+of+the+beastro
-                https://www.facebook.com/Markofthebeastro/
                 markofthebeastro@gmail.com
             </section>
             <section id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>

@@ -25,11 +25,13 @@
                         <div class="site-branding">
                             <p class="site-description">
                                 <?php bloginfo( 'description' ); ?>
+                                text
                             </p>
                         </div>
                         <div class="custom-info">
                             <div class="header-hours">
                                 <?php echo get_theme_mod('hours'); ?>
+                                hours
                             </div>
                             <div class="header-phone">
                                 <?php echo get_theme_mod('phone'); ?>
@@ -39,25 +41,28 @@
                             </div>
                         </div>
                         <div class="nav-links">
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/menu-link.png" class="nav-link"/>
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/order-link.png" class="nav-link"/>
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/about-link.png" class="nav-link"/>
+                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/menu-link.png" alt="Menu" class="nav-link"/>
+                            <a href="https://my-site-102247-105906.square.site/" target="blank">
+                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/order-link.png" alt="Order"class="nav-link"/>
+                            </a>
+                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/about-link.png" alt="About" class="nav-link"/>
                         </div>
                         <div class="social-icons">
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/insta-icon.png" class="social-icon"/>
+                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/insta-icon.png" alt="Instagram Icon"class="social-icon"/>
                             <a href="https://www.facebook.com/Markofthebeastro/" target="blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fb-icon.png" class="social-icon"/>
+                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fb-icon.png" alt="Facebook Icon" class="social-icon"/>
                             </a>
                         </div>
                     </div>
             </div> 
             <div class="header-container">
                 <div class="beast-container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/beast.png" class="beast"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/beast.png" alt="Beast Logo" class="beast"/>
                 </div>
-                <div class="text-header">        
-                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" class="mark-of">
-                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/vegan-diner.png" class="vegan-diner"/>
+                <div class="text-header neon-red">        
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" alt="Mark Of The Beastro" class="mark-of">
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/vegan-diner.png" alt="Vegan Diner" class="vegan-diner"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/add-phone.png" alt="666 S. State St. 385-202-7386" class="add-number"/>
                 </div>
                 </div>
         </header>
