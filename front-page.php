@@ -1,5 +1,27 @@
 <!-- Page pulled in for static front page -->
 <?php get_header(); ?>
+
+<div class="header-container">
+                <div class="beast-container">
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/beast.png" alt="Beast Logo" class="beast"/>
+                </div>
+                <div class="text-header neon-red">        
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" alt="Mark Of The Beastro" class="mark-of">
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/vegan-diner.png" alt="Vegan Diner" class="vegan-diner"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/add-phone.png" alt="666 S. State St. 385-202-7386" class="add-number"/>
+                </div>
+                </div>
+        </header>
+
+<?php
+        // check to see if the background exists and add it to the page
+        if ( get_theme_mod( 'bg-img' ) ) : ?>
+        <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+            url('<?php echo get_theme_mod( 'bg-img' ); ?>'); ">
+        </div>
+<?php endif; ?>
+
+<div id="content" class="site-content">
 <div id="primary" class="content-area extended">
 <main id="main" class="site-main" role="main">
         <section class="section-carousel">

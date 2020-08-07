@@ -133,16 +133,27 @@ body{
     margin-left: .5rem;
     display: block;
 }
+/*
+
+ALERT SECTION
+
+*/
+.alert-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
 .alert{
     font-family: 'Quicksand', sans-serif;
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
     border: 1px  #fca5a5 solid;
     box-shadow: 0 0 10px 2px #eb3b3b inset, 0 0 10px 3px #f94646;
     border-radius: 5px;
     padding: 2rem;
     text-align: center;
+    z-index: 5;
 }
 .alert p{
     margin-top: 2rem;
@@ -213,3 +224,139 @@ body{
     margin-bottom: 1rem;
     font-family: 'Fugaz One', cursive;
 }
+
+/*
+
+MENU SECTION STYLING
+
+*/
+
+/**
+ * Minimalist front-end styles
+ */
+
+ .brm-menu {
+   max-width: 880px;
+   margin: 0 auto;
+   display: block;
+   color: #5c5c5c;
+   padding: 50px 0 20px 0;
+   font-family: 'Quicksand', sans-serif; }
+ 
+ .brm-heading h2 {
+   color: white;
+   font-size: 50px;
+   letter-spacing: -2px;
+   text-align: center;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin: 0;
+   display: block;
+   font-family: 'Quicksand', sans-serif; }
+ 
+ .brm-heading-description {
+   color: #777;
+   font-size: 18px;
+   text-align: center;
+   margin: 5px 0 0 0px; }
+ 
+ .brm-heading {
+   border-bottom: 3px solid white;
+   margin-bottom: 30px;
+   padding-bottom: 20px; }
+ 
+ .brm-heading.subgroup {
+   border-bottom: 0;
+   background: #eee;
+   padding: 10px; }
+ 
+ .brm-heading.subgroup h2 {
+   font-size: 32px;
+   letter-spacing: -1px;
+   color: #444; }
+ 
+ .brm-item {
+   margin: 0px 0 30px;
+   font-size: 18px;
+   display: inline-block;
+   width: 100%;
+   vertical-align: top; }
+ 
+ .brm-item-image {
+   float: left;
+   max-width: 103px;
+   margin: 0 19px 0 0px;
+   box-shadow: 2px 2px 0 #fff, 5px 5px 0 #ddd; }
+ 
+ .brm-item-image img {
+   display: block; }
+ 
+ .brm-item-details {
+   float: none;
+   overflow: hidden; }
+ 
+ .brm-item-name {
+   font-size: 24px;
+   text-align: left;
+   color: white;
+   padding: 0 0 14px 0;
+   border-bottom: 2px dotted #7c7c7c; }
+ 
+ .brm-item-description {
+   color: #929292;
+   font-size: 14px;
+   text-align: left;
+   padding: 14px 0;
+   line-height: 1.5em; }
+ 
+ .brm-item-price {
+   float: right;
+   font-size: 24px;
+   color: white;
+   margin-top: -40px; }
+ 
+ .pl-developer {
+   max-width: 880px;
+   margin: 0 auto 50px auto;
+   font-size: 14px;
+   text-align: right;
+   color: #666; }
+ 
+ .pl-developer a {
+   color: #ff8400; }
+ 
+ .pl-developer a:hover {
+   color: #d92c73; }
+ 
+ @media only screen and (max-width: 767px) {
+   .brm-menu {
+     padding: 24px 24px; }
+   .brm-item-details {
+     margin: 0; }
+   .brm-item-image {
+     margin: 0 16px 0 0px; }
+   .brm-item-image img {
+     max-width: 100%;
+     height: auto; }
+   .brm-item-name {
+     font-size: 20px;
+     padding: 0 0 6px 0; }
+   .brm-item-price {
+     font-size: 20px;
+     margin-top: -28px; }
+   .brm-item-description {
+     padding: 4px 0;
+     font-size: 13px; }
+   .brm-heading-description {
+     font-size: 14px; }
+   .brm-menu-section h2 {
+     font-size: 32px;
+     letter-spacing: -1px; }
+   .brm-menu-section .subgroup h2 {
+     font-size: 24px; }
+   .brm-item-image {
+     max-width: 90px; }
+   .pl-developer {
+     text-align: center;
+     padding: 0 20px; } }
+ 
