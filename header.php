@@ -40,7 +40,9 @@
                             <a href="https://my-site-102247-105906.square.site/" target="blank">
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/order-link.png" alt="Order"class="nav-link"/>
                             </a>
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/about-link.png" alt="About" class="nav-link"/>
+                            <a href="<?php echo get_home_url(); ?>/about">
+                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/about-link.png" alt="About" class="nav-link"/>
+                            </a>
                         </div>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/markofthebeastro/" target="blank">    

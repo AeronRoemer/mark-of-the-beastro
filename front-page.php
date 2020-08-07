@@ -24,17 +24,6 @@
 <div id="content" class="site-content">
 <div id="primary" class="content-area extended">
 <main id="main" class="site-main" role="main">
-        <section class="section-carousel">
-        <?php 
-            $query = new WP_Query( array( 'category_name' => 'gallery'));
-            if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php get_template_part( 'template-parts/content', 'page' ); ?>
-            </article>
-            <?php endwhile; else :?>
-                <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
-            <?php endif; ?> 
-            <?php get_sidebar(); ?>
-        </section>
 
         <?php get_template_part( 'template-parts/alert'); ?>
 
@@ -45,7 +34,7 @@
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
             </article>
             <?php endwhile; else :?>
-                <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
+                <?php get_template_part( 'template-parts/content', 'none' ); ?> 
             <?php endif; ?>
             <!--Permanant Sections: About & Beehive Link Image -->
             <section class="post section-info neon-text">

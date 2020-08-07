@@ -224,7 +224,15 @@ ALERT SECTION
     margin-bottom: 1rem;
     font-family: 'Fugaz One', cursive;
 }
+/*
 
+SINGLE PAGE STYLING
+
+*/
+.top-img-container{
+    width: 100%;
+    object-fit: cover;
+}
 /*
 
 MENU SECTION STYLING
@@ -284,11 +292,12 @@ MENU SECTION STYLING
  
  .brm-item-image {
    float: left;
-   max-width: 103px;
+   max-width: 153px;
    margin: 0 19px 0 0px;
-   box-shadow: 2px 2px 0 #fff, 5px 5px 0 #ddd; }
+    }
  
  .brm-item-image img {
+     width: 12rem;
    display: block; }
  
  .brm-item-details {

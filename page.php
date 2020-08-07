@@ -1,19 +1,29 @@
 <!-- Fallback page used before index.php -->
 <?php get_header(); ?>
+</header>
 <div id="primary" class="content-area">
 <main id="main" class="content-container site-main" role="main">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <h1><?php the_title(); ?> SINGULAR</h1>
+    <?php
+        $liveimgArray = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );
+    ?>
+    <h1><?php the_title(); ?> pageSINGULAR</h1>
     </article>
-            <section class="section-carousel">
-                <?php get_sidebar(); ?>
+    <div class="top-img-container">
+        <img src="<?php echo $liveimgArray[0]; ?>" class="top-img" />
+    </div>
+                        <section id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
+            <div class="section-post">
+                
+                <div>
+                <a href="<?php the_permalink( ); ?>">
+                    <?php the_title( '<h1>', '</h1>' ); ?>
+                </a>
+                This is basic text that will eventually draw from a description. 
+            </div>
+            </div>
             </section>
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'template-parts/content', 'page' ); ?>
-            </article>
-            <?php endwhile; else :?>
-                <?php get_template_part( 'template-parts/content', 'none' ); ?> <!-- setup due to hyphen in content-none.php -->
-            <?php endif; ?>
+
         </div>
         <?php get_sidebar( 'page' ); ?>
 </div>
