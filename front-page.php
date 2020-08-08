@@ -28,11 +28,40 @@
         <?php get_template_part( 'template-parts/alert'); ?>
 
         <section class="content-container">
+        <section id="section-left" class="post">
+            <div class="section-post">
+                <div class="entry-text">
+                <a href="<?php the_permalink( ); ?>">
+                    <h1 class="entry-title">
+                    Menu
+                    </h1>    
+                </a>
+                Check out all our menu items. 
+            </div>
+                <div class="page-img-container">
+                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/tofu-bene.jpg" alt="Tofu Benedict" class="page-img"/>
+                </div>
+            </div>
+        </section>
+        <section id="section-right" class="post">
+            <div class="section-post">
+                <div class="entry-text-right">
+                <a href="<?php the_permalink( ); ?>">
+                    <h1 class="entry-title">
+                    Order
+                    </h1>    
+                </a>
+                Place an order on our online store. We offer in-house delivery at select times, available as an option in the online store. 
+            </div>
+                <div class="page-img-container-right">
+                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/tofu-bene.jpg" alt="Tofu Benedict" class="page-img-right"/>
+                </div>
+            </div>
+        </section>
         <?php 
             $query = new WP_Query( array( 'category_name' => 'front'));
             if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
-            </article>
             <?php endwhile; else :?>
                 <?php get_template_part( 'template-parts/content', 'none' ); ?> 
             <?php endif; ?>
