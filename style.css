@@ -205,14 +205,14 @@ FRONT PAGE DIV STYLING
 .entry-text{
     display: inline-block;
     position: absolute;
-    width: 30%;
+    width: 50%;
     top: 0;
     left: 0;
 }
 .entry-text-right{
     display: inline-block;
     position: absolute;
-    width: 30%;
+    width: 50%;
     top: 0;
     right: 0;
 }
@@ -221,7 +221,7 @@ FRONT PAGE DIV STYLING
     position: absolute;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 50%;
     height: 30rem;
     display: inline-block;
     object-fit: contain;
@@ -231,30 +231,35 @@ FRONT PAGE DIV STYLING
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 50%;
     height: 30rem;
     display: inline-block;
     object-fit: contain;
     overflow: hidden;
 }
 .page-img{
-    object-fit: cover;
     width: 100%;
-    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+    height: 100%;
+    object-fit: contain;
 }
 .page-img-right{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+    height: 100%;
 }
 .entry-title{
     text-transform: uppercase;
-    background-color: #000000;
+    display: inline-block;
     color: white;
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family: 'Fugaz One', cursive;
+    transition: ease-in 2s;
+}
+.entry-title :hover{
+    background-color: white;
+    color: black;
 }
 /*
 

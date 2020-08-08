@@ -31,44 +31,36 @@
         <section id="section-left" class="post">
             <div class="section-post">
                 <div class="entry-text">
-                <a href="<?php the_permalink( ); ?>">
-                    <h1 class="entry-title">
+                <a href="<?php echo get_home_url(); ?>/menu" class="entry-title">
+                    <h1 >
                     Menu
                     </h1>    
                 </a>
-                Check out all our menu items. 
-            </div>
+                <p>Check out all our menu items. </p>
+                <a href="https://my-site-102247-105906.square.site/" class="entry-title" target="blank">
+                    <h1>
+                    Order
+                    </h1>    
+                </a>
+                <p>Place an order on our online store. We offer in-house delivery at select times, available as an option in the online store.</p> 
+                </div>
                 <div class="page-img-container">
-                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/tofu-bene.jpg" alt="Tofu Benedict" class="page-img"/>
+                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/scoot-icon.png" alt="Scooter Icon" class="page-img"/>
                 </div>
             </div>
         </section>
         <section id="section-right" class="post">
             <div class="section-post">
                 <div class="entry-text-right">
-                <a href="<?php the_permalink( ); ?>">
-                    <h1 class="entry-title">
-                    Order
+                <a href="<?php echo get_home_url(); ?>/about" class="entry-title" >
+                    <h1>
+                    About
                     </h1>    
                 </a>
-                Place an order on our online store. We offer in-house delivery at select times, available as an option in the online store. 
-            </div>
-                <div class="page-img-container-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/tofu-bene.jpg" alt="Tofu Benedict" class="page-img-right"/>
-                </div>
-            </div>
-        </section>
-        <?php 
-            $query = new WP_Query( array( 'category_name' => 'front'));
-            if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'template-parts/content', 'page' ); ?>
-            <?php endwhile; else :?>
-                <?php get_template_part( 'template-parts/content', 'none' ); ?> 
-            <?php endif; ?>
-            <!--Permanant Sections: About & Beehive Link Image -->
-            <section class="post section-info neon-text">
+                <p>The Mark Of The Beastro blah blah blah</p>
                 <div>
-                    Information 
+                    <h2>Information </h2>
+                    markofthebeastro@gmail.com
                     <div class="header-hours">
                         <?php echo get_theme_mod('hours'); ?>
                     </div>
@@ -81,18 +73,19 @@
                     <div class="header-location-ext">
                         <?php echo get_theme_mod('location-ext'); ?>
                     </div>
+                </div> 
                 </div>
-                https://www.yelp.com/biz/mark-of-the-beastro-salt-lake-city-2?osq=mark+of+the+beastro
-                markofthebeastro@gmail.com
-            </section>
+                </div>
+                <div class="page-img-container-right">
+                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/shake-icon.png" alt="Shake Icon" class="page-img-right"/>
+                </div>
+            </div>
+        </section>
             <section id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
                 <div class="section-beehive">
                     <a href="beehive">
                     <img src="beehive src" class="post-image" />
                     </a>
-                    <div class="entry-title">
-                        The Beehive 
-                    </div>
                 </div>
             </section>
         </section>

@@ -8,7 +8,7 @@
     <a href="<?php the_permalink( ); ?>">
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     </a>
-    This is basic text that will eventually draw from a description. 
+    <p>This is basic text that will eventually draw from a description. </p>
    </div>
     <div class="page-img-container">
       <img src="<?php echo $liveimgArray[0]; ?>" class="page-img" />
