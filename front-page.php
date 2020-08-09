@@ -31,18 +31,19 @@
         <section id="section-left" class="post">
             <div class="section-post">
                 <div class="entry-text">
-                <a href="<?php echo get_home_url(); ?>/menu" class="entry-title">
-                    <h1 >
-                    Menu
-                    </h1>    
-                </a>
-                <p>Check out all our menu items. </p>
-                <a href="https://my-site-102247-105906.square.site/" class="entry-title" target="blank">
-                    <h1>
-                    Order
-                    </h1>    
-                </a>
-                <p>Place an order on our online store. We offer in-house delivery at select times, available as an option in the online store.</p> 
+                <h1 class="entry-title">
+                    Menu & Ordering
+                </h1>  
+
+                <p>Check out the full menu online, or place an order on the online store. Our in-house delivery service may be able to deliver to you - just choose the 'delivery' option at checkout when avalible. </p>
+                <div class="order-buttons">
+                    <a href="https://my-site-102247-105906.square.site/" target="blank">
+                    order button
+                    </a>
+                    <a href="<?php echo get_home_url(); ?>/menu" >  
+                    menu button
+                    </a>
+                </div>
                 </div>
                 <div class="page-img-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/scoot-icon.png" alt="Scooter Icon" class="page-img"/>
@@ -50,7 +51,10 @@
             </div>
         </section>
         <section id="section-right" class="post">
-            <div class="section-post">
+            <div class="section-post-right">
+                <div class="page-img-container-right">
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/shake-icon.png" alt="Shake Icon" class="page-img-right"/>
+                </div>
                 <div class="entry-text-right">
                 <a href="<?php echo get_home_url(); ?>/about" class="entry-title" >
                     <h1>
@@ -76,25 +80,8 @@
                 </div> 
                 </div>
                 </div>
-                <div class="page-img-container-right">
-                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/shake-icon.png" alt="Shake Icon" class="page-img-right"/>
-                </div>
             </div>
-        </section>
-            <section id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
-                <div class="section-beehive">
-                    <a href="beehive">
-                    <img src="beehive src" class="post-image" />
-                    </a>
-                </div>
-            </section>
         </section>
     </div>
 </div>
 <?php get_footer(); ?>
-
-<!-- specify posts
-<?php get_post(1428); ?>
-                <?php get_template_part( 'template-parts/content', 'page' ); ?>
-            </article>
-            -->

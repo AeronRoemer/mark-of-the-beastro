@@ -13,10 +13,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: beastro
 font-family: 'Concert One', cursive;
 
-- neon alert
-- menu & plugin
+
 - about text and links
--  order link and text
+- parallax in images
 //include font in own files later
 */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
@@ -45,6 +44,9 @@ time, mark, audio, video {
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+}
+a{
+    text-decoration: none;
 }
 body{
     font-size: 1.5rem;
@@ -190,7 +192,6 @@ ALERT SECTION
     position: relative;
     margin: 6rem auto;
     width: 100%;
-    height: 30rem;
     border-radius: 5px;
 }
 
@@ -201,39 +202,41 @@ FRONT PAGE DIV STYLING
 */
 .section-post{
     position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section-post-right{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 .entry-text{
-    display: inline-block;
-    position: absolute;
-    width: 50%;
+    display: block;
+    width: 50rem;
+    height: 30rem;
     top: 0;
     left: 0;
 }
 .entry-text-right{
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    top: 0;
-    right: 0;
+    display: block;
+    width: 50rem;
+    height: 30rem;
 }
 
 .page-img-container{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
+    display: block;
+    width: 40rem;
     height: 30rem;
-    display: inline-block;
     object-fit: contain;
     overflow: hidden;
 }
 .page-img-container-right{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
+    width: 40rem;
     height: 30rem;
-    display: inline-block;
     object-fit: contain;
     overflow: hidden;
 }
