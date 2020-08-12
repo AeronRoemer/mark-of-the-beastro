@@ -10,29 +10,11 @@
     <body <?php body_class(); ?>>
     <div id="page">
             <header id="masthead" class="header-container" role="banner">
-                    <a href="#content" class="skip-link screen-reader-text" display="none">
-                        <?php esc_html_e( 'Skip to content', 'beastro' ); ?> 
-                    </a>
                 <div class="nav">
                     <div class="nav-content">
-                        <div class="site-branding">
-                            <p class="site-description">
-                                <?php bloginfo( 'description' ); ?>
-                                text
-                            </p>
-                        </div>
-                        <div class="custom-info">
-                            <div class="header-hours">
-                                <?php echo get_theme_mod('hours'); ?>
-                                hours
-                            </div>
-                            <div class="header-phone">
-                                <?php echo get_theme_mod('phone'); ?>
-                            </div>
-                            <div class="header-location">
-                                <?php echo get_theme_mod('location'); ?>
-                            </div>
-                        </div> 
+                    <div class="header-img-container">
+                        <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" class="header-img"/>
+                    </div>
                         <div class="nav-links">
                             <a href="<?php echo get_home_url(); ?>/menu">
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/menu-link.png" alt="Menu" class="nav-link"/>

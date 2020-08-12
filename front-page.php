@@ -37,11 +37,11 @@
 
                 <p>Check out the full menu online, or place an order on the online store. Our in-house delivery service may be able to deliver to you - just choose the 'delivery' option at checkout when avalible. </p>
                 <div class="order-buttons">
-                    <a href="https://my-site-102247-105906.square.site/" target="blank">
-                    order button
+                    <a href="https://my-site-102247-105906.square.site/" target="blank" class="button-link">
+                    ORDER
                     </a>
-                    <a href="<?php echo get_home_url(); ?>/menu" >  
-                    menu button
+                    <a href="<?php echo get_home_url(); ?>/menu" class="button-link">  
+                    MENU
                     </a>
                 </div>
                 </div>
@@ -61,7 +61,9 @@
                     About
                     </h1>    
                 </a>
-                <p>The Mark Of The Beastro blah blah blah</p>
+                <p>The Mark Of The Beastro blah blah blah <a href="<?php echo get_home_url(); ?>/about" class="button-readmore">  
+                    read more &rarr;
+                    </a></p>
                 <div>
                     <h2>Information </h2>
                     markofthebeastro@gmail.com
