@@ -65,8 +65,8 @@
                     read more &rarr;
                     </a></p>
                 <div>
-                    <h2>Information </h2>
-                    markofthebeastro@gmail.com
+                <br />
+
                     <div class="header-hours">
                         <?php echo get_theme_mod('hours'); ?>
                     </div>
@@ -79,6 +79,7 @@
                     <div class="header-location-ext">
                         <?php echo get_theme_mod('location-ext'); ?>
                     </div>
+                    markofthebeastro@gmail.com
                 </div> 
                 </div>
                 </div>

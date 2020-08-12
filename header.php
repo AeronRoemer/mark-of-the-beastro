@@ -13,7 +13,9 @@
                 <div class="nav">
                     <div class="nav-content">
                     <div class="header-img-container">
-                        <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" class="header-img"/>
+                    <a href="<?php echo get_home_url(); ?>/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" class="header-img" alt="Mark Of The Beastro Logo Image"/>
+                            </a>    
                     </div>
                         <div class="nav-links">
                             <a href="<?php echo get_home_url(); ?>/menu">
