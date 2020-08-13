@@ -17,7 +17,8 @@
         // check to see if the background exists and add it to the page
         if ( get_theme_mod( 'bg-img' ) ) : ?>
         <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-            url('<?php echo get_theme_mod( 'bg-img' ); ?>'); ">
+            url('<?php echo get_theme_mod( 'bg-img' ); ?>');
+            background-attachment: fixed; ">
         </div>
 <?php endif; ?>
 
