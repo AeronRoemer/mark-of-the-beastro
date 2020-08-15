@@ -21,7 +21,7 @@
                             <a href="<?php echo get_home_url(); ?>/menu">
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/menu-link.png" alt="Menu" class="nav-link"/>
                             </a>
-                            <a href="https://my-site-102247-105906.square.site/" target="blank">
+                            <a href="https://my-site-102247-105906.square.site/" >
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/order-link.png" alt="Order"class="nav-link"/>
                             </a>
                             <a href="<?php echo get_home_url(); ?>/about">
@@ -29,10 +29,9 @@
                             </a>
                         </div>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/markofthebeastro/" target="blank">    
-                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/insta-icon.png" alt="Instagram Icon"class="social-icon"/>
+                            <a href="https://www.instagram.com/markofthebeastro/" ><img src="<?php echo get_template_directory_uri(); ?>/inc/img/insta-icon.png" alt="Instagram Icon" class="social-icon" />
                             </a>
-                            <a href="https://www.facebook.com/Markofthebeastro/" target="blank">
+                            <a href="https://www.facebook.com/Markofthebeastro/" >
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fb-icon.png" alt="Facebook Icon" class="social-icon"/>
                             </a>
                         </div>

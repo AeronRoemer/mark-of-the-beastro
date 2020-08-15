@@ -47,6 +47,11 @@ html{
 }
 a{
     text-decoration: none;
+    border: none;
+}
+a img{
+  text-decoration: none;
+  border: none;
 }
 h2{
     font-size: 3rem;
