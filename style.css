@@ -64,8 +64,7 @@ body{
     margin: 0;
 }
 
-  
-  button:hover {
+button:hover {
     background: #03063A;
   }
 .background-image{
@@ -73,6 +72,17 @@ body{
     height: 95vh;
     background-size: cover;
     background-position: center; 
+}
+/*
+
+NAV & HEADER
+
+*/
+.nav-checkbox{
+  display: none;
+}
+.nav-button{
+  display: none;
 }
 .header-img-container{
     display: inline-block;
@@ -248,7 +258,6 @@ FRONT PAGE DIV STYLING
 }
 
 .page-img-container{
-    display: block;
     width: 40rem;
     height: 30rem;
     object-fit: contain;
@@ -295,11 +304,7 @@ FRONT PAGE DIV STYLING
     color: white;
     text-decoration: underline;
   }
-/*
 
-SINGLE PAGE STYLING
-
-*/
 
 /*
 
@@ -401,8 +406,13 @@ MENU SECTION STYLING
  
  .pl-developer a:hover {
    color: #d92c73; }
- 
- @media only screen and (max-width: 767px) {
+ /*
+
+RESPONSIVE STYLING
+
+*/
+
+ @media only screen and (max-width: 767px) { 
    .brm-menu {
      padding: 24px 24px; }
    .brm-item-details {
@@ -434,3 +444,67 @@ MENU SECTION STYLING
      text-align: center;
      padding: 0 20px; } }
  
+@media all and (max-width: 900px){
+  .nav-button {
+    display: block;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 1.7rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+  }
+  .nav-line img{
+    display: block;
+    width: 100%;
+    margin: -.6rem;
+  }
+  .nav-links{
+    display: none;
+  }
+  .social-icons{
+    display: none;
+  }
+  .nav-content{
+    justify-content: left;
+    margin-left: 2rem;
+  }
+}
+@media all and (max-width: 650px){
+.background-image{
+  height: 70vh;
+}
+.content-container{
+  padding-top: 0;
+  padding-b;
+}
+.beast-container{
+  display: none;
+}
+.order-buttons{
+  margin-bottom: 4rem;
+}
+.mark-of{
+  width: 80vw;
+  display: block;
+}
+.vegan-diner{
+  width: 80vw;
+  margin-left: .5rem;
+  display: block;
+}
+.add-number{
+  width: 80vw;
+  margin-left: .5rem;
+  display: block;
+}
+.section-post-right{
+  flex-wrap: wrap;
+}
+.page-img-container{
+  display: none;
+}
+}
