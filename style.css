@@ -340,8 +340,8 @@ MENU SECTION STYLING
  
  .brm-heading {
    border-bottom: 3px solid white;
-   margin-bottom: 30px;
-   padding-bottom: 20px; }
+   padding-bottom: 30px;
+   margin: 0 2rem 2rem 2rem;}
  
  .brm-heading.subgroup {
    border-bottom: 0;
@@ -372,6 +372,7 @@ MENU SECTION STYLING
  
  .brm-item-details {
    float: none;
+   padding: 0 2rem;
    overflow: hidden; }
  
  .brm-item-name {
