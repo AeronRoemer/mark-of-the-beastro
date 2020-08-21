@@ -10,20 +10,17 @@
     <body <?php body_class(); ?>>
     <div id="page">
             <header id="masthead" class="header-container" role="banner">
-                <div class="nav">
-                    <input type="checkbox" class="nav-checkbox" id="nav-check">
+                <input type="checkbox" class="nav-checkbox" id="nav-check">
                     <label for="nav-check" class="nav-button">
                         <div class="nav-line"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
                         <div class="nav-line"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
                         <div class="nav-line"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
-                    </label>
+                        </label>
+                <div class="nav">
                     <div class="nav-content">
-                        <div class="header-img-container">
                             <a href="<?php echo get_home_url(); ?>/">
-                            <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" class="header-img" alt="Mark Of The Beastro Logo Image"/>
-                                    </a>    
-                        </div>
-                        <div class="nav-links">
+                                <img src="<?php echo get_template_directory_uri(); ?>/inc/img/mark-of.png" class="header-img" alt="Mark Of The Beastro Logo Image"/>
+                            </a>    
                             <a href="<?php echo get_home_url(); ?>/menu">
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/menu-link.png" alt="Menu" class="nav-link"/>
                             </a>
@@ -33,7 +30,6 @@
                             <a href="<?php echo get_home_url(); ?>/about">
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/about-link.png" alt="About" class="nav-link"/>
                             </a>
-                        </div>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/markofthebeastro/" ><img src="<?php echo get_template_directory_uri(); ?>/inc/img/insta-icon.png" alt="Instagram Icon" class="social-icon" />
                             </a>
@@ -41,6 +37,9 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/inc/img/fb-icon.png" alt="Facebook Icon" class="social-icon"/>
                             </a>
                         </div>
+                    </div>
+                    <div class="nav-background">
+                        &nbsp;
                     </div>
             </div> 
         
