@@ -12,9 +12,11 @@
             <header id="masthead" class="header-container" role="banner">
                 <input type="checkbox" class="nav-checkbox" id="nav-check">
                     <label for="nav-check" class="nav-button">
-                        <div class="nav-line"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
-                        <div class="nav-line"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
-                        <div class="nav-line"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
+                        <div class="nav-icon">
+                            <div class="nav-line nav-line-top"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
+                            <div class="nav-line nav-line-mid"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
+                            <div class="nav-line nav-line-bottom"><img src="<?php echo get_template_directory_uri(); ?>/inc/img/nav-line.png" alt="Expand Navigation Menu"/></div>
+                        </div>
                         </label>
                 <div class="nav">
                     <div class="nav-content">
