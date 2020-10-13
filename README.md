@@ -1,8 +1,5 @@
 # mark-of-the-beastro
-Content and theme for 'Mark of the Beastro' restaurant website 
+Content and theme for 'Mark of the Beastro' restaurant website to be seen at 
+www.markofthebeastro.com when uploaded to host. 
 
-add to wp-content/uploads
-<FilesMatch "(?i)\.(php|php3?|phtml)$">
-            Order Deny,Allow
-            Deny from All
-</FilesMatch>
+Posted as a backup.
