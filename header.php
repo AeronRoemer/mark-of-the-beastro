@@ -43,5 +43,5 @@
                     <div class="nav-background">
                         &nbsp;
                     </div>
-            </div> 
+            </header> 
         

@@ -11,10 +11,21 @@
     <h1><?php the_title(); ?></h1>
     </article>
     <section id="post-<?php the_ID(); ?>"  <?php post_class(); ?>>
+    <div id="content" class="widecolumn">
+ <?php if (have_posts()) : while (have_posts()) : the_post();?>
+
+ <h2 id="post-<?php the_ID(); ?>"><?php the_title();?></h2>
+
+                <?php the_content(); ?>
+
+                <?php endwhile; endif; ?>
+                <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+                </div>
+
             </div>
             </div>
             </section>
-
         </div>
 </div>
 <?php get_footer(); ?>
+
