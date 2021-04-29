@@ -23,7 +23,7 @@ The main technologies and concepts demonstrated in this project are
 ![Site-Mobile](/READMEimgs/Screen Shot 2021-04-29 at 11.56.41 AM.png)
 
 ### Custom Images
-![Site-Desktop](/READMEimgs/Screen Shot 2021-04-29 at 11.56.55 AM.png)
+![Site-Desktop](/READMEimgs/desktoplogos.png)
 
 Custom icons that fit the aesthic of the restaurant were created by drawing on the in-house deliery scooter and the vinatge neon sign on the building.
 
