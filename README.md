@@ -18,9 +18,9 @@ The main technologies and concepts demonstrated in this project are
 * PNG Graphics
 
 ## Responsive Layout
-![Site-Desktop](/READMEimgs/desktop1.png)
-
-![Site-Mobile](/READMEimgs/mobile.png)
+| Desktop| Mobile |
+| --- | --- |
+| ![Site-Desktop](/READMEimgs/desktop1.png) | ![Site-Mobile](/READMEimgs/mobile.png) |
 
 ### Custom Images
 ![Site-Desktop](/READMEimgs/desktoplogos.png)
